@@ -1,4 +1,7 @@
+package com.etraveli.refactoring.model;
+
 public class MovieRental {
+
     private String movieId;
     private int days;
 
@@ -11,7 +14,15 @@ public class MovieRental {
         return movieId;
     }
 
+    public void setMovieId(String movieId) {
+        this.movieId = movieId;
+    }
+
     public int getDays() {
         return days;
+    }
+
+    public void setDays(int days) {
+        this.days = days;
     }
 }

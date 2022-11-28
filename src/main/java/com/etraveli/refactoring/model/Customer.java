@@ -1,6 +1,9 @@
+package com.etraveli.refactoring.model;
+
 import java.util.List;
 
 public class Customer {
+
     private String name;
     private List<MovieRental> rentals;
 
@@ -13,7 +16,15 @@ public class Customer {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public List<MovieRental> getRentals() {
         return rentals;
+    }
+
+    public void setRentals(List<MovieRental> rentals) {
+        this.rentals = rentals;
     }
 }
