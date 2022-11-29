@@ -16,7 +16,7 @@ public class Movie {
         return title;
     }
 
-    public void setTitle(String title) {
+    public void set(String title) {
         this.title = title;
     }
 
