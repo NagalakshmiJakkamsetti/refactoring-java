@@ -1,17 +1,38 @@
 # Refactoring Java
 
-The code creates an information slip about movie rentals.
-Rewrite and improve the code after your own liking.
+This code creates an information slip about movie rentals.
 
-Think: you are responsible for the solution, this is a solution you will have to put your name on.
+Refactored the Movie Rental Application project, I have changed the project src structures and added packages.
+Added the possible test cases.
 
+#Test Cases: 
 
-## Handing in the assignment
+Below list of test cases crated for MovieService and RentalInfoService modules for postive and negeative scenario's. 
+Also, added test results document to this repo.
 
-Reason how you have been thinking and the decisions you took. 
-You can hand in the result any way you feel (git patch, pull-request or ZIP-file).
-Note: the Git history must be included.
+MovieService Unit Test cases : 
+-----------------------------
+ - testSaveMovieShouldCreateMovieObject
+ - testSetMovieList
+ - testGetMovieShouldReturnMovie
+ - testGetMovieShouldThrowExceptionIfCouldNotFindID
 
+RentalInfoService Unit Test Cases : 
+----------------------------------
+
+ - testCalculateRentalAmountForMinimumDaysRegular
+ - testCalculateRentalAmountForFourDaysRegular
+ - testCalculateRentalAmountForSixDaysChildren
+ - testCalculateRentalAmountForNewMovie
+ - testCalculateRentalAmountForNewMovieForFiveDays
+ - testGetStatementForCustomerForZeroMoviesRental
+ - testGetStatementForCustomerForSingleMoviesRental
+ - testGetStatementForCustomerForMultipleRentals
+ - testAddFrequentBonusForNewMoviesShouldNotIncrementForRegularMovies
+ - testAddFrequentBonusForNewMoviesShouldNotIncrementForChildrenMovies
+ - testAddFrequentBonusForNewMoviesShouldIncrementOnce
+ - testAddFrequentBonusForNewMoviesWithOneDayShouldNotIncrement
+ 
 
 ## To run the test:
 
